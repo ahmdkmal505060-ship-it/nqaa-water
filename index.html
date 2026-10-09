@@ -3,223 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نقاء الماء وعين الصقر | فلاتر المياه وأنظمة الأمان في مصر</title>
-    <!-- Tailwind CSS CDN -->
+    <title>نقاء الماء & عين الصقر | فلاتر المياه وأنظمة الأمان</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Cairo -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            scroll-behavior: smooth;
-        }
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- Header / Navbar -->
-    <header class="bg-white/95 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center text-white shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform">
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-blue-600 flex items-center justify-center text-white shadow-lg">
                     <i class="fa-solid fa-shield-halved text-xl"></i>
                 </div>
                 <div>
-                    <span class="text-lg font-extrabold bg-gradient-to-r from-blue-700 to-cyan-600 bg-clip-text text-transparent">نقاء الماء & عين الصقر</span>
-                    <span class="block text-xs font-semibold text-cyan-600 tracking-wider">مياه نقية وأمان متكامل 💧🛡️</span>
+                    <span class="text-lg font-black text-blue-900">نقاء الماء & عين الصقر</span>
+                    <span class="block text-xs font-bold text-cyan-600">مياه نقية وأمان متكامل 💧🛡️</span>
                 </div>
             </a>
-
-            <!-- Nav Links -->
-            <nav class="hidden md:flex items-center gap-6 font-semibold text-slate-600 text-sm">
-                <a href="#water-services" class="hover:text-blue-600 transition-colors">فلاتر المياه</a>
-                <a href="#security-services" class="hover:text-cyan-600 transition-colors">كاميرات المراقبة</a>
-                <a href="#packages" class="hover:text-blue-600 transition-colors">العروض المشتركة</a>
-                <a href="#faq" class="hover:text-blue-600 transition-colors">الأسئلة الشائعة</a>
-                <a href="#contact" class="hover:text-blue-600 transition-colors">تواصل معنا</a>
+            <nav class="hidden md:flex items-center gap-6 font-bold text-slate-600 text-sm">
+                <a href="#water" class="hover:text-blue-600">فلاتر المياه</a>
+                <a href="#cameras" class="hover:text-blue-600">كاميرات المراقبة</a>
+                <a href="#packages" class="hover:text-blue-600">العروض</a>
+                <a href="#contact" class="hover:text-blue-600">تواصل معنا</a>
             </nav>
-
-            <!-- WhatsApp CTA Button -->
-            <a href="https://wa.me/201006123243" target="_blank" class="hidden sm:flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-bold shadow-lg shadow-emerald-500/20 transition-all hover:scale-105 text-sm">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>اطلب الخدمة</span>
+            <a href="https://wa.me/201006123243" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-bold shadow-md text-sm flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> اطلب الخدمة
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-b from-blue-50/70 via-cyan-50/30 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6 text-center lg:text-right">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100/80 text-blue-700 font-bold text-sm shadow-sm">
-                        <i class="fa-solid fa-award"></i>
-                        <span>الخيار الأول لصحة عائلتك وأمان منزلك في مصر</span>
-                    </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-                        مياه أنقى <br>
-                        <span class="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">وأمان كامل لمن تحب</span>
-                    </h1>
-                    <p class="text-lg text-slate-600 font-medium max-w-xl mx-auto lg:mx-0">
-                        نقدم لك حلولاً متكاملة: فلاتر مياه منزلية وتجارية لضمان صحة عائلتك، بالإضافة إلى أحدث أنظمة كاميرات المراقبة وأجهزة الإنذار لحماية منزلك وشركتك.
-                    </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="https://wa.me/201006123243" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-blue-500/25 transition-all hover:scale-105">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                            <span>اطلب استشارة عبر واتساب</span>
-                        </a>
-                        <a href="tel:01006123243" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-bold shadow-sm transition-all">
-                            <i class="fa-solid fa-phone text-blue-600"></i>
-                            <span>اتصل بنا الآن</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Hero Clean Real Photos Cards -->
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white p-4 rounded-3xl shadow-xl border border-slate-100 space-y-3 transform hover:-translate-y-1 transition-all">
-                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=700&q=85" alt="فلتر مياه منزلي" class="w-full h-44 object-cover rounded-2xl">
-                        <h3 class="font-bold text-slate-900 text-center text-sm">نقاء الماء (فلاتر)</h3>
-                    </div>
-                    <div class="bg-white p-4 rounded-3xl shadow-xl border border-slate-100 space-y-3 transform translate-y-6 hover:translate-y-5 transition-all">
-                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=700&q=85" alt="كاميرات مراقبة" class="w-full h-44 object-cover rounded-2xl">
-                        <h3 class="font-bold text-slate-900 text-center text-sm">عين الصقر (كاميرات)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Water Services Section -->
-    <section id="water-services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <span class="text-blue-600 font-bold uppercase tracking-wider text-sm bg-blue-50 px-3 py-1 rounded-full">قسم فلاتر المياه</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">خدمات نقاء الماء المتكاملة</h2>
-                <p class="text-slate-600 font-medium">كل ما يحتاجه فلتر المياه بمنزلك أو شركتك لضمان مياه صحية نقية وخالية من الشوائب.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-6 hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=700&q=85" alt="بيع فلاتر المياه" class="w-full h-52 object-cover rounded-2xl mb-5 shadow-sm">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">بيع فلاتر المياه</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">أحدث الموديلات المنزلية والتجارية (5 و 7 مراحل) مع ضمان حقيقي وخدمة تركيب سريعة.</p>
-                </div>
-
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-6 hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=85" alt="التركيب والصيانة" class="w-full h-52 object-cover rounded-2xl mb-5 shadow-sm">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">التركيب والصيانة</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">فريق فني متخصص لتركيب الفلاتر وفحصها بدقة وإصلاح أي أعطال طارئة في الحال.</p>
-                </div>
-
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-6 hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=700&q=85" alt="تغيير الشمعات" class="w-full h-52 object-cover rounded-2xl mb-5 shadow-sm">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">تغيير الشمعات</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">توفير شمعات أصلية مع نظام متابعة دقيق لتذكيرك بمواعيد التغيير في وقتها المناسب.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Security Systems Section (Cameras) -->
-    <section id="security-services" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <span class="text-cyan-400 font-bold uppercase tracking-wider text-sm bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">قسم أنظمة الأمان</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">كاميرات المراقبة وحماية الممتلكات (عين الصقر)</h2>
-                <p class="text-slate-400 font-medium">احمِ بيتك، محلك، أو شركتك على مدار الساعة بأحدث تقنيات المراقبة والإنذار.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-6 hover:border-cyan-500 transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=700&q=85" alt="كاميرات مراقبة" class="w-full h-52 object-cover rounded-2xl mb-5 shadow-sm">
-                    <h3 class="text-xl font-bold text-white mb-2">كاميرات مراقبة عالية الدقة</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">كاميرات داخلية وخارجية برؤية ليلية واضحة، مع إمكانية المتابعة المباشرة من هاتفك.</p>
-                </div>
-
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-6 hover:border-cyan-500 transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=700&q=85" alt="أجهزة التخزين" class="w-full h-52 object-cover rounded-2xl mb-5 shadow-sm">
-                    <h3 class="text-xl font-bold text-white mb-2">أجهزة التخزين وأنظمة العرض</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">أنظمة تسجيل متطورة (DVR / NVR) لتخزين الفيديوهات واسترجاعها في أي وقت.</p>
-                </div>
-
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-6 hover:border-cyan-500 transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1563630423388-5d838ee57209?auto=format&fit=crop&w=700&q=85" alt="أنظمة الإنذار" class="w-full h-52 object-cover rounded-2xl mb-5 shadow-sm">
-                    <h3 class="text-xl font-bold text-white mb-2">أنظمة الإنذار والتحكم</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">إنذارات ضد السرقة وأبواب ذكية لتحكم كامل في الدخول والخروج بأقصى درجات الأمان.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Special Combined Packages Banner -->
-    <section id="packages" class="py-20 bg-slate-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="space-y-4 text-center md:text-right z-10">
-                    <span class="bg-white/25 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">عروض مميزة</span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold">باقة الأمان والنقاء الشاملة 💧🛡️</h3>
-                    <p class="text-blue-100 text-sm max-w-lg">اطلب خدمة تركيب فلتر المياه مع نظام كاميرات المراقبة واحصل على خصم خاص ومتابعة صيانة مجانية.</p>
-                </div>
-                <div class="z-10">
-                    <a href="https://wa.me/201006123243" target="_blank" class="bg-white text-blue-900 hover:bg-slate-100 font-extrabold px-8 py-4 rounded-2xl shadow-xl transition-all inline-flex items-center gap-3 hover:scale-105">
-                        <i class="fa-brands fa-whatsapp text-emerald-600 text-2xl"></i>
-                        <span>احجز الباقة الآن</span>
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-100/50 to-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-right">
+                <span class="bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-sm font-bold">الخدمة الأولى في مصر 🇪🇬</span>
+                <h1 class="text-4xl sm:text-6xl font-black text-slate-900 leading-tight">
+                    صحة عائلتك وأمان بيتك <br><span class="text-blue-600">في مكان واحد</span>
+                </h1>
+                <p class="text-slate-600 text-lg font-medium">أحدث فلاتر المياه المنزلية والتجارية (5 و 7 مراحل)، بالإضافة إلى أنظمة كاميرات المراقبة المتطورة وحماية الممتلكات.</p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="https://wa.me/201006123243" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold shadow-xl text-center">
+                        <i class="fa-brands fa-whatsapp text-xl ml-2"></i> اطلب استشارة عبر واتساب
+                    </a>
+                    <a href="tel:01006123243" class="bg-white hover:bg-slate-100 text-slate-800 border px-8 py-4 rounded-2xl font-bold text-center">
+                        <i class="fa-solid fa-phone text-blue-600 ml-2"></i> 01006123243
                     </a>
                 </div>
             </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-3 rounded-3xl shadow-xl border">
+                    <img src="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?auto=format&fit=crop&w=600&q=80" alt="فلتر" class="w-full h-44 object-cover rounded-2xl">
+                    <h3 class="font-bold text-center mt-2 text-sm">فلاتر مياه نقية</h3>
+                </div>
+                <div class="bg-white p-3 rounded-3xl shadow-xl border mt-6">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="كاميرات" class="w-full h-44 object-cover rounded-2xl">
+                    <h3 class="font-bold text-center mt-2 text-sm">كاميرات مراقبة</h3>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 space-y-4">
-                <span class="text-blue-600 font-bold uppercase tracking-wider text-sm bg-blue-50 px-3 py-1 rounded-full">الأسئلة الشائعة</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">إجابات على أبرز استفساراتك</h2>
+    <!-- Water Services -->
+    <section id="water" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-blue-600 font-bold bg-blue-50 px-3 py-1 rounded-full text-sm">نقاء الماء</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-2">أنظمة تنقية ومعالجة المياه</h2>
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-3xl border">
+                    <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">بيع الفلاتر المنزلية</h3>
+                    <p class="text-slate-600 text-sm">أنظمة ريفيرس أوسموزيس متقدمة لتنقية المياه وإزالة الشوائب والروائح.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-3xl border">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">التركيب والصيانة</h3>
+                    <p class="text-slate-600 text-sm">فريق فني متخصص لتركيب الفلاتر وصيانتها في أسرع وقت بمصر.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-3xl border">
+                    <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">تغيير الشمعات والمكونات</h3>
+                    <p class="text-slate-600 text-sm">توفير جميع أنواع الشمعات الأصلية مع خدمة المتابعة والتذكير في موعدها.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="space-y-4">
-                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">هل يمكنني طلب خدمة الفلاتر والكاميرات معاً؟</h3>
-                    <p class="text-slate-600 text-sm">نعم، نوفر لك الخدمتين بمعايير احترافية عالية مع إمكانية الاستفادة من العروض المشتركة لعملائنا في مصر.</p>
+    <!-- Cameras Services -->
+    <section id="cameras" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 font-bold bg-slate-800 px-3 py-1 rounded-full text-sm border border-cyan-700">عين الصقر</span>
+                <h2 class="text-3xl font-black mt-2">كاميرات المراقبة وأنظمة الأمان</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">كاميرات مراقبة خارجية وداخلية</h3>
+                    <p class="text-slate-400 text-sm">رؤية ليلية فائقة الوضوح ومتابعة حية مباشرة من هاتفك المحمول على مدار الساعة.</p>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">ما هي مواعيد تغيير شمعات الفلتر؟</h3>
-                    <p class="text-slate-600 text-sm">تتراوح من 3 إلى 6 أشهر للشمعات الأولى، ومن سنة إلى سنتين للمرحلة الأخيرة والممبرين، حسب الاستهلاك وجودة المياه.</p>
+                <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">أجهزة التسجيل والتخزين (DVR)</h3>
+                    <p class="text-slate-400 text-sm">أنظمة تسجيل ذكية ومساحات تخزين ضخمة لحفظ الفيديوهات واسترجاعها بسهولة.</p>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">هل يمكن ربط كاميرات المراقبة بالهاتف المحمول؟</h3>
-                    <p class="text-slate-600 text-sm">بالتأكيد، نقوم ببرمجة الكاميرات وربطها بهاتفك لتتمكن من متابعة منزلك أو محلك لحظة بلحظة وبجودة عالية.</p>
+                <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1563630423388-5d838ee57209?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">أنظمة الإنذار والتحكم الآلي</h3>
+                    <p class="text-slate-400 text-sm">أجهزة إنذار متطورة ضد السرقات وحلول أمنية متكاملة للشركات والمنازل.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages & CTA -->
+    <section id="packages" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl p-8 sm:p-12 text-white text-center shadow-2xl space-y-6">
+                <h3 class="text-3xl font-black">اطلب باقة الأمان والنقاء الشاملة 💧🛡️</h3>
+                <p class="text-blue-100 max-w-xl mx-auto">احصل على تركيب فلتر مياه مع نظام كاميرات مراقبة لمنزلك أو محلك بخصم حصري ومتابعة صيانة مجانية.</p>
+                <a href="https://wa.me/201006123243" target="_blank" class="inline-block bg-white text-blue-900 font-extrabold px-8 py-4 rounded-2xl shadow-xl hover:bg-slate-100 transition">
+                    <i class="fa-brands fa-whatsapp text-emerald-600 text-xl ml-2"></i> احجز العرض الآن عبر واتساب
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800" id="contact">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center text-white">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <div>
-                    <span class="text-white font-bold text-lg">نقاء الماء & عين الصقر</span>
-                    <span class="block text-xs text-slate-500">خدمات متكاملة للمياه والأمان في مصر</span>
-                </div>
-            </div>
-
-            <div class="text-sm font-medium">
-                تواصل معنا مباشرة: <a href="tel:01006123243" class="text-cyan-400 font-bold hover:underline">01006123243</a>
-            </div>
-
-            <div class="text-xs text-slate-500">
-                جميع الحقوق محفوظة © 2026.
-            </div>
-        </div>
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-center text-sm">
+        <p class="font-bold text-white mb-2">نقاء الماء & عين الصقر - مصر</p>
+        <p>تواصل معنا مباشرة عبر الهاتف أو واتساب: <a href="tel:01006123243" class="text-cyan-400 font-bold">01006123243</a></p>
+        <p class="text-xs text-slate-600 mt-4">جميع الحقوق محفوظة © 2026</p>
     </footer>
 
 </body>
