@@ -14,6 +14,7 @@
             --primary-dark: #0369a1;
             --secondary: #0f172a;
             --accent: #38bdf8;
+            --gold: #f59e0b;
             --light: #f8fafc;
             --gray: #64748b;
             --white: #ffffff;
@@ -55,35 +56,52 @@
             align-items: center;
         }
 
-        .logo {
+        /* تصميم الشعار الاحترافي المبتكر */
+        .brand-logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             text-decoration: none;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            border-radius: 10px;
+        .logo-emblem {
+            position: relative;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 14px;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+
+        .logo-emblem i.fa-shield-halved {
+            font-size: 26px;
             color: var(--white);
-            font-size: 20px;
+        }
+
+        .logo-emblem i.fa-droplet {
+            position: absolute;
+            font-size: 14px;
+            color: var(--accent);
+            top: 10px;
         }
 
         .logo-text h1 {
             color: var(--white);
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 17px;
+            font-weight: 800;
             line-height: 1.2;
+            letter-spacing: 0.5px;
         }
 
         .logo-text span {
             color: var(--accent);
-            font-size: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
         nav {
@@ -106,7 +124,7 @@
         .cta-btn {
             background: linear-gradient(135deg, #25d366, #128c7e);
             color: var(--white);
-            padding: 8px 16px;
+            padding: 8px 18px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
@@ -116,6 +134,12 @@
             gap: 6px;
             white-space: nowrap;
             box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            transition: var(--transition);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
         }
 
         /* الهيرو */
@@ -238,7 +262,7 @@
             color: var(--secondary);
         }
 
-        /* شبكة البطاقات الاحترافية بالأيقونات */
+        /* شبكة البطاقات */
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -348,7 +372,7 @@
             text-decoration: none;
         }
 
-        /* إخفاء الروابط العلوية في الموبايل لترتيب الهيدر تماماً */
+        /* إخفاء القائمة في الموبايل */
         @media (max-width: 768px) {
             nav {
                 display: none;
@@ -361,12 +385,13 @@
 </head>
 <body>
 
-    <!-- الهيدر -->
+    <!-- الهيدر مع الشعار الجديد المبتكر -->
     <header>
         <div class="header-container">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <i class="fa-solid fa-shield-water"></i>
+            <a href="#" class="brand-logo">
+                <div class="logo-emblem">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <i class="fa-solid fa-droplet"></i>
                 </div>
                 <div class="logo-text">
                     <h1>نقاء الماء & عين الصقر</h1>
