@@ -123,7 +123,7 @@
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
         }
 
-        /* القسم الرئيسي (Hero) مع صورة hero-banner.png الخاصة بك */
+        /* الهيرو */
         .hero {
             background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), url('hero-banner.png') center/cover no-repeat;
             min-height: 90vh;
@@ -215,14 +215,14 @@
 
         /* الأقسام العامة */
         section {
-            padding: 90px 20px;
+            padding: 80px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .section-header span {
@@ -241,7 +241,7 @@
             color: var(--secondary);
         }
 
-        /* شبكة الخدمات وبطاقات الصور */
+        /* شبكة البطاقات */
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -268,7 +268,7 @@
 
         .card-img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
         }
 
@@ -309,20 +309,22 @@
             color: var(--primary-dark);
         }
 
-        /* قسم البانر الإضافي */
+        /* بانر الشركة */
         .banner-showcase {
             width: 100%;
             max-width: 1200px;
-            margin: 40px auto;
+            margin: 20px auto 40px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 0 20px;
         }
 
         .banner-showcase img {
             width: 100%;
             height: auto;
             display: block;
+            border-radius: 20px;
         }
 
         /* قسم العروض الخاصة */
@@ -332,8 +334,6 @@
             padding: 60px 40px;
             text-align: center;
             color: var(--white);
-            position: relative;
-            overflow: hidden;
             box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
             margin: 40px 20px;
         }
@@ -410,7 +410,7 @@
         </div>
     </header>
 
-    <!-- الهيرو (باستخدام صورتك hero-banner.png) -->
+    <!-- الهيرو -->
     <section class="hero" style="max-width: 100%;">
         <div class="hero-content">
             <span class="badge">الخدمة الأولى في مصر 🇪🇬</span>
@@ -427,14 +427,12 @@
         </div>
     </section>
 
-    <!-- عرض بانر إضافي nqaa-water-banner.png -->
-    <div style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
-        <div class="banner-showcase">
-            <img src="nqaa-water-banner.png" alt="بانر نقاء الماء">
-        </div>
+    <!-- البانر الترويجي -->
+    <div class="banner-showcase">
+        <img src="nqaa-water-banner.png" alt="بانر نقاء الماء">
     </div>
 
-    <!-- فلاتر المياه (مربوطة بصور الفلاتر الخاصة بك) -->
+    <!-- قسم فلاتر المياه (مستقل تماماً) -->
     <section id="water">
         <div class="section-header">
             <span>نقاء الماء</span>
@@ -476,7 +474,7 @@
         </div>
     </section>
 
-    <!-- كاميرات المراقبة وأنظمة الأمان -->
+    <!-- قسم كاميرات المراقبة وأنظمة الأمان (مستقل تماماً تحت الفلاتر) -->
     <section id="cameras">
         <div class="section-header">
             <span>عين الصقر</span>
